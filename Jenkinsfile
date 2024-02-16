@@ -1,10 +1,10 @@
 node('built-in') 
 {
-    stage('Continuous Download') 
+    stage('Continuous Download_cards') 
 	{
     git 'https://github.com/tsri010203/mycode.git'
 	}
-    stage('Continuous Build') 
+    stage('Continuous Build_cards') 
 	{
     sh label: '', script: 'mvn package'
 	}
